@@ -10,5 +10,9 @@ A multithreaded dynamic library (DLL) to decode and convert RenderWare Binary St
 # Project state
 The DLL was tested with Unity game engine and enables runtime loading of DFF files, TXD files and collision object. A few files have been successfully tested at this point.
 
+# Dependencies
+External dependencies:
+- GLM (OpenGL Mathematics): A header-only math library with a permissive license (MIT).
+
 # Building / Compilation
 The code can be compiled using MSVC, using the C++17 standard. You can add all the code files (so not the "docs") to a Visual Studio project and set the default include directory to the "include" directory. Choose DLL/dynamic library as a compilation target. 
