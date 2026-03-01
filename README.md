@@ -5,7 +5,7 @@ A multithreaded dynamic library (DLL) to stream in and convert RenderWare Binary
 - Converts DFF models, TXD texture dictionaries and COL collision model bundles. Supports files from GTA 3 at this stage only.
 - Streaming architecture: Runs a concurrent conversion queue into which load jobs are commissioned. Converted data can be retrieved when the job has been finished. The commission order is kept at all times.
 - C API: The DLL was written to enable <b>runtime</b> model loading in Unity game engine. The C API is architecture agnostic, however, and may be used in other contexts as well. 
-- Loads files from an internal "virtual filesystem" (a list, essentially), into which IMG archives (so the files within them), but also single files can be mounted. 
+- Loads files from an internal "virtual filesystem" (a list or hash table, essentially), into which IMG archives (so the files within them), but also single files can be mounted. 
 
 # Project state
 The DLL was tested with Unity game engine and enables runtime loading of DFF files, TXD files and collision object. A few files have been successfully tested at this point.
